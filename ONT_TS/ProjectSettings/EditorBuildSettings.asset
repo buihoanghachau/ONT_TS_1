@@ -4,6 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TestScene.unity
+    guid: 37dc2405b9446469ebc38d4f8a5d112e
+  - enabled: 1
+    path: Assets/DreamForestTree/DemoWoods.unity
+    guid: 6dc68697d72e283438f1cd3bd3441279
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: f1aa08d0a5c6fd345ae3ce3582bca998, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 77af89c3c2467471d9d9be59e07305a2,
+      type: 2}
