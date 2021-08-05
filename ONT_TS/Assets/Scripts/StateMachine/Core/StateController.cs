@@ -17,6 +17,8 @@ namespace ONT_TS.StateMachine
         {
             _currentState = _transitionTable.GetInitialState(this);
         }
+#if UNITY_EDITOR
+
         private void OnEnable()
         {
             UnityEditor.AssemblyReloadEvents.afterAssemblyReload += OnAfterAssemblyReload;
@@ -29,7 +31,7 @@ namespace ONT_TS.StateMachine
         {
             UnityEditor.AssemblyReloadEvents.afterAssemblyReload -= OnAfterAssemblyReload;
         }
-
+#endif
         public new bool TryGetComponent<T>(out T component) where T : Component
         {
             var type = typeof(T);
@@ -60,7 +62,7 @@ namespace ONT_TS.StateMachine
             _currentState.OnStateUpdate();
             //Curren state!
             currentState = gameObject.name + " :" + _currentState._originSO.name;
-            
+
         }
 
         private void Transition(State transitionState)

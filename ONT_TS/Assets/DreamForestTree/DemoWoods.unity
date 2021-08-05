@@ -298,6 +298,16 @@ PrefabInstance:
       propertyPath: _healthBar
       value: 
       objectReference: {fileID: 1716922307}
+    - target: {fileID: 6343236539557738252, guid: d0fff06aee67ca24c87c98185036c290,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717039493151576342, guid: d0fff06aee67ca24c87c98185036c290,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6928349154133370867, guid: d0fff06aee67ca24c87c98185036c290,
         type: 3}
       propertyPath: cam
